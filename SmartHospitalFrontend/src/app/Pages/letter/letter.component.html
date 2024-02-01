@@ -1,0 +1,12 @@
+<app-toolbar></app-toolbar>
+<div class="main-letter-class">
+  <app-create-letter></app-create-letter>
+  <mat-label class="letter-lable">
+    Gespeicherte Briefe
+  </mat-label>
+  <app-table [DisplayedColumn]="LetterDisplayedColumn" [DataSource]="LetterDataSource" [columnMappings]="columnMappings" [SortDisabled]="false" [SearchDisabled]="false" [pageSize]="perPageSize">
+
+  </app-table>
+</div>
+
+

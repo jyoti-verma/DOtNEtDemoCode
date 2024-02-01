@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+		<PackageReference Include="NullGuard.Fody" Version="3.1.1" PrivateAssets="All"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SmartHospital.Letters.Core\SmartHospital.Letters.Core.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Domain\SmartHospital.Letters.Domain.csproj"/>
+	</ItemGroup>
+</Project>

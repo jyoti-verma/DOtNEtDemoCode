@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Version>1.40.0</Version>
+		<AssemblyVersion>1.40.0</AssemblyVersion>
+		<FileVersion>1.40.0</FileVersion>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+		<IsPackable>true</IsPackable>
+		<PreserveCompilationContext>true</PreserveCompilationContext>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="..\.dockerignore">
+			<Link>.dockerignore</Link>
+		</Content>
+		<Content Update="appsettings.Development.json">
+			<DependentUpon>appsettings.json</DependentUpon>
+		</Content>
+		<Content Update="Views\LetterAsHtml\Letter.cshtml">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="DinkToPdf" Version="1.0.8"/>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" Version="6.0.22"/>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11"/>
+		<PackageReference Include="Microsoft.AspNetCore.Razor.Language" Version="6.0.22"/>
+		<PackageReference Include="Microsoft.CodeAnalysis.Razor" Version="6.0.22"/>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.10"/>
+		<PackageReference Include="NullGuard.Fody" Version="3.1.1" PrivateAssets="All"/>
+		<PackageReference Include="RazorLight" Version="2.3.1"/>
+		<PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.11"/>
+		<PackageReference Include="Swashbuckle.AspNetCore.Filters.Abstractions" Version="7.0.11"/>
+		<PackageReference Include="System.Linq" Version="4.3.0"/>
+		<PackageReference Include="System.Linq.Async" Version="6.0.1"/>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0"/>
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0"/>
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0"/>
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.5"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SmartHospital.Letters.Context\SmartHospital.Letters.Context.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Dtos\SmartHospital.Letters.Dtos.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Services\SmartHospital.Letters.Services.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Domain\SmartHospital.Letters.Domain.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.UseCases\SmartHospital.Letters.UseCases.csproj"/>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Folder Include="Views\"/>
+	</ItemGroup>
+	<ItemGroup>
+		<AdditionalFiles Include="Views\LetterAsHtml\Letter.cshtml">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</AdditionalFiles>
+	</ItemGroup>
+
+
+</Project>

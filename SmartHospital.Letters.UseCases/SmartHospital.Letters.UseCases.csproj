@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SmartHospital.Letters.Context\SmartHospital.Letters.Context.csproj"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SmartHospital.Letters.Context\SmartHospital.Letters.Context.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Core\SmartHospital.Letters.Core.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Domain\SmartHospital.Letters.Domain.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Dtos\SmartHospital.Letters.Dtos.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Fhir.Api.Client\SmartHospital.Letters.Fhir.Api.Client.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Services\SmartHospital.Letters.Services.csproj"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MediatR" Version="12.1.1"/>
+		<PackageReference Include="NullGuard.Fody" Version="3.1.1" PrivateAssets="All"/>
+		<PackageReference Include="System.Linq.Async" Version="6.0.1"/>
+	</ItemGroup>
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+			<_Parameter1>SmartHospital.Letters.UseCases.Tests</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+</Project>

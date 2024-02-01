@@ -1,0 +1,25 @@
+<mat-toolbar>
+  <div mat-button [matMenuTriggerFor]="menu" class="user-account">
+    <span class="material-icons">account_circle</span>
+  </div>
+  <mat-menu #menu="matMenu" class="user-profile">
+
+    <button mat-button matSuffix>
+      <mat-icon class="account_circle" [ngStyle]="{'color':'#E68B00'}">account_circle</mat-icon>
+      <span style="margin-right: 35px;">Schröder, Dieter, Dr. med</span>  <br />
+      <span style="color:lightgray">D.schroeder@muster-mail.com</span>
+    </button>
+
+    <button mat-button matSuffix>
+      <mat-icon>add</mat-icon> <span>Benutzer hinzufugen</span>
+    </button>
+    <button mat-button matSuffix>
+      <mat-icon>settings</mat-icon>
+      <span>Benutzereinstellungen</span>
+    </button>
+    <hr />
+    <button mat-button>
+      <span> Benutzer abmelden</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

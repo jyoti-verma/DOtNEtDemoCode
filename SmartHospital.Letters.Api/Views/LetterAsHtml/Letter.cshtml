@@ -1,0 +1,41 @@
+﻿@model SmartHospital.Letters.Dtos.Letter
+
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+	<title>@Model.Title</title>
+</head>
+<body>
+<div class="letter">
+	<div id="header">
+		<h1>@Model.Title</h1>
+		<span class="modified">@Model.Modified</span>
+	</div>
+	<div class="sections">
+		@foreach (var section in Model.Sections)
+		{
+			<div class="@("section " + section.Title)" id="@(section.Id)">
+				<h2>@(section.Title)</h2>
+				@foreach (var snipped in section.Snippets)
+				{
+					<h3>@(snipped.Title)</h3>
+					<table id="@snipped.Id" class="values">
+						@foreach (var pair in snipped.KeyValues)
+						{
+							<tr id="@pair.Id">
+								<th class="@pair.KeyType">@pair.Key</th>
+								<td class="@pair.ValueType">@pair.Value</td>
+							</tr>
+						}
+					</table>
+				}
+			</div>
+		}
+	</div>
+	<div id="footer"></div>
+</div>
+</body>
+</html>

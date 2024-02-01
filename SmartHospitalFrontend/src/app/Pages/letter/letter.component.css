@@ -1,0 +1,11 @@
+.letter-lable {
+  text-align: left;
+  font: normal normal normal 20px/28px Sans-serif !important;
+  letter-spacing: 0.18px;
+  color: #E68B00 !important;
+ 
+}
+.main-letter-class {
+  width: 80%;
+  margin: auto;
+}

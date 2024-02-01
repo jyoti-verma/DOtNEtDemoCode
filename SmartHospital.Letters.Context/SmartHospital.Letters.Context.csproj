@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Entities\**"/>
+		<EmbeddedResource Remove="Entities\**"/>
+		<None Remove="Entities\**"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="appsettings.json"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="appsettings.json">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.11"/>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.11"/>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11"/>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.11"/>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0"/>
+		<PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="7.0.0"/>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0"/>
+		<PackageReference Include="Microsoft.Extensions.Identity.Core" Version="7.0.11"/>
+		<PackageReference Include="NullGuard.Fody" Version="3.1.1" PrivateAssets="All"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SmartHospital.Letters.Domain\SmartHospital.Letters.Domain.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Entities\SmartHospital.Letters.Entities.csproj"/>
+
+	</ItemGroup>
+
+
+</Project>

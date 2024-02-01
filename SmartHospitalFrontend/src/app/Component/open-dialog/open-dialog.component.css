@@ -1,0 +1,50 @@
+.dialog-content {
+  width: 90%;
+  margin: auto;
+}
+.dialog-content .table-main {
+  width: 100%;
+  margin: auto;
+  max-height: 300px;
+}
+
+.dialog-content .cdk-column-plus .mat-sort-header-container {
+  display: none;
+}
+.dialog-toolbar {
+  cursor: pointer !important;
+  display: flex;
+  justify-content: space-between;
+  background-color: orange !important;
+}
+.dialog-content .header-title {
+  border-bottom: none !important;
+}
+.dialog-content .mat-mdc-header-cell {
+  border-bottom-color: black !important;
+}
+.dialog-toolbar span {
+  margin-left: 20px;
+}
+  .dialog-toolbar span, .close-dialog {
+    color: white !important;
+  }
+.dialog-content p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.dialog-content hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #c6b7b7;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.dialog-content .open-button {
+  background-color: #f0f0f0; /* Gray background color */
+  color: #808080; /* Gray text color */
+  float: right;
+  position: relative;
+  bottom: 5px
+}

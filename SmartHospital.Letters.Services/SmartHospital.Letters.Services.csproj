@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Extensions\DependencyInjection\"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Faker.Net" Version="2.0.154"/>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.11"/>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0"/>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0"/>
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.0.0"/>
+		<PackageReference Include="NullGuard.Fody" Version="3.1.1" PrivateAssets="All"/>
+		<PackageReference Include="RazorLight" Version="2.3.1"/>
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.0"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SmartHospital.Letters.Context\SmartHospital.Letters.Context.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Core\SmartHospital.Letters.Core.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Domain\SmartHospital.Letters.Domain.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Dtos\SmartHospital.Letters.Dtos.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Entities\SmartHospital.Letters.Entities.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Fhir.Api.Client\SmartHospital.Letters.Fhir.Api.Client.csproj"/>
+		<ProjectReference Include="..\SmartHospital.Letters.Repositories\SmartHospital.Letters.Repositories.csproj"/>
+	</ItemGroup>
+
+</Project>

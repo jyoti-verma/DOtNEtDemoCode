@@ -1,0 +1,74 @@
+/*not stop remove
+*/
+.create-letter .mat-mdc-form-field-subscript-wrapper {
+  display: none
+}
+
+.create-letter {
+  margin-top: 20px;
+}
+/*inner input css
+*/
+.create-letter input {
+  margin-top: 2px;
+  margin-left: 6px;
+  width: 250px !important;
+  height: 32px !important;
+}
+
+.create-letter mat-label {
+  text-align: left;
+  font: normal normal normal 20px/28px Sans-serif !important;
+  letter-spacing: 0.18px;
+  color: #E68B00 !important;
+  opacity: 1;
+}
+
+.create-letter .mat-mdc-form-field-infix {
+  padding: 0px !important;
+  min-height: 30px !important;
+  background-color: white !important;
+}
+
+.mat-mdc-form-field-icon-suffix {
+  background-color: white !important;
+}
+/*outer input css
+*/
+.create-letter .form-field {
+  width: 320px;
+  height: 34px;
+  border: 1px solid;
+  background-color: #FFFFFF;
+  border: 2px solid #CCCCCC;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.form-field:hover {
+  border: 2px solid #E68B00;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after {
+  border-bottom-color: #CCCCCC !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+  border-bottom-color: #CCCCCC !important;
+}
+
+.create-letter .mat-mdc-text-field-wrapper {
+  padding: 0px !important;
+  background-color: #EBEBEB !important;
+}
+.create-letter .add-icon {
+  padding: 4px !important;
+}
+.create-letter hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

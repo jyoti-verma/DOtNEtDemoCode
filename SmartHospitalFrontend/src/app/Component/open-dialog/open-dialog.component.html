@@ -1,0 +1,13 @@
+<mat-toolbar class="dialog-toolbar">
+  <span>{{dialogHeading}}</span>
+  <mat-icon (click)="closeDialog()" class="close-dialog">close</mat-icon>
+</mat-toolbar>
+
+<div class="dialog-content">
+  <p>{{dialogText}}</p>
+  <app-table [DisplayedColumn]="NewLetterDisplayedColumn" [DataSource]="NewLetterDataSource" [columnMappings]="columnMappings" [SortDisabled]="false" [SearchDisabled]="true" [pageSize]="perPageSize"></app-table>
+  <hr />
+  <button mat-button class="open-button">Open</button>
+</div>
+
+

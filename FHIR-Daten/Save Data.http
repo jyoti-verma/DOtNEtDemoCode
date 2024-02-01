@@ -1,0 +1,82 @@
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_1.json
+###
+
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_2.json
+###
+
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_3.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_4.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_5.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_6.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_7.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_8.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_9.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_10.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_11.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_12.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_13.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_14.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_15.json
+###
+POST https://fhirserver-development.azurewebsites.net/fhir
+Content-Type: application/fhir+json
+
+< exported_16.json
+###
